@@ -42,9 +42,12 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const snippetImage = document.querySelector('#cta-img');
+const middleImage = document.querySelector('#middle-img');
 const headerText = document.querySelector('h1');
 const getStartedButton = document.querySelector('button');
 
 snippetImage.setAttribute('src', '../img/header-img.png');
+middleImage.setAttribute('src', '../img/mid-page-accent.jpg');
 headerText.textContent = 'DOM IS AWESOME';
 getStartedButton.innerHTML = 'Get Started';
+
