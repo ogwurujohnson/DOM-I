@@ -67,6 +67,10 @@ const blog = document.createElement('a');
 blog.textContent = 'Blog';
 navHeader.appendChild(blog);
 
+const articles = document.createElement('a');
+articles.textContent = 'Articles';
+navHeader.prepend(articles);
+
 // change the color of the navigation text to green
 const navArray = Array.from(navigation);
 console.log(navArray);
