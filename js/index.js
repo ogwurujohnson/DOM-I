@@ -84,7 +84,7 @@ navArray.forEach((item) => {
 snippetImage.setAttribute('src', siteContent["cta"]["img-src"]);
 
 // set the content of thd snippeth1
-headerText.textContent = siteContent["cta"]["h1"];
+headerText.innerHTML = siteContent["cta"]["h1"].split(" ").map((item, index) => (index > 0 ? `<br>${item}`: item)).join("");
 getStartedButton.innerHTML = siteContent["cta"]["button"];
 
 // set the content of the top content children
