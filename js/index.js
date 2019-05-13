@@ -41,6 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// select elements and element children
+const navigation = document.querySelector('nav').children;
 const snippetImage = document.querySelector('#cta-img');
 const middleImage = document.querySelector('#middle-img');
 const headerText = document.querySelector('h1');
