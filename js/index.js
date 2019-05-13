@@ -66,12 +66,14 @@ snippetImage.setAttribute('src', siteContent["cta"]["img-src"]);
 // set the content of thd snippeth1
 headerText.textContent = siteContent["cta"]["h1"];
 getStartedButton.innerHTML = siteContent["cta"]["button"];
+
 // set the content of the top content children
 topContent[0].children[0].textContent = siteContent["main-content"]["features-h4"];
 topContent[0].children[1].textContent = siteContent["main-content"]["features-content"];
 
 topContent[1].children[0].textContent = siteContent["main-content"]["about-h4"];
 topContent[1].children[1].textContent = siteContent["main-content"]["about-content"];
+
 
 // set the content of the middle image section
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
@@ -85,6 +87,7 @@ bottomContent[1].children[1].textContent = siteContent["main-content"]["product-
 
 bottomContent[2].children[0].textContent = siteContent["main-content"]["vision-h4"];
 bottomContent[2].children[1].textContent = siteContent["main-content"]["vision-content"];
+
 
 // set the content of the textcontent children
 contact[0].textContent = siteContent["contact"]["contact-h4"];
