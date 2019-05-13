@@ -85,3 +85,12 @@ bottomContent[1].children[1].textContent = siteContent["main-content"]["product-
 
 bottomContent[2].children[0].textContent = siteContent["main-content"]["vision-h4"];
 bottomContent[2].children[1].textContent = siteContent["main-content"]["vision-content"];
+
+// set the content of the textcontent children
+contact[0].textContent = siteContent["contact"]["contact-h4"];
+contact[1].textContent = siteContent["contact"]["address"];
+contact[2].textContent = siteContent["contact"]["phone"];
+contact[3].textContent = siteContent["contact"]["email"];
+
+// set the content of the footer child
+footer[0].textContent = siteContent["footer"]["copyright"];
