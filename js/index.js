@@ -60,3 +60,15 @@ navigation[3].textContent = siteContent.nav["nav-item-4"];
 navigation[4].textContent = siteContent.nav["nav-item-5"];
 navigation[5].textContent = siteContent.nav["nav-item-6"];
 
+// set the image content of the snipper image
+snippetImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+// set the content of thd snippeth1
+headerText.textContent = siteContent["cta"]["h1"];
+getStartedButton.innerHTML = siteContent["cta"]["button"];
+// set the content of the top content children
+topContent[0].children[0].textContent = siteContent["main-content"]["features-h4"];
+topContent[0].children[1].textContent = siteContent["main-content"]["features-content"];
+
+topContent[1].children[0].textContent = siteContent["main-content"]["about-h4"];
+topContent[1].children[1].textContent = siteContent["main-content"]["about-content"];
