@@ -60,6 +60,13 @@ navigation[3].textContent = siteContent.nav["nav-item-4"];
 navigation[4].textContent = siteContent.nav["nav-item-5"];
 navigation[5].textContent = siteContent.nav["nav-item-6"];
 
+// change the color of the navigation text to green
+const navArray = Array.from(navigation);
+console.log(navArray);
+navArray.forEach((item) => {
+  item.style.color = 'green';
+});
+
 // set the image content of the snipper image
 snippetImage.setAttribute('src', siteContent["cta"]["img-src"]);
 
@@ -97,3 +104,4 @@ contact[3].textContent = siteContent["contact"]["email"];
 
 // set the content of the footer child
 footer[0].textContent = siteContent["footer"]["copyright"];
+
