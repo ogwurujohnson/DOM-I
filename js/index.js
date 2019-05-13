@@ -42,6 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // select elements and element children
+const navHeader = document.querySelector('nav');
 const navigation = document.querySelector('nav').children;
 const snippetImage = document.querySelector('#cta-img');
 const middleImage = document.querySelector('#middle-img');
@@ -60,12 +61,20 @@ navigation[3].textContent = siteContent.nav["nav-item-4"];
 navigation[4].textContent = siteContent.nav["nav-item-5"];
 navigation[5].textContent = siteContent.nav["nav-item-6"];
 
+
+// use appendChild() and prepend() to add items to the navigation
+const blog = document.createElement('a');
+blog.textContent = 'Blog';
+navHeader.appendChild(blog);
+
 // change the color of the navigation text to green
 const navArray = Array.from(navigation);
 console.log(navArray);
 navArray.forEach((item) => {
   item.style.color = 'green';
 });
+
+
 
 // set the image content of the snipper image
 snippetImage.setAttribute('src', siteContent["cta"]["img-src"]);
