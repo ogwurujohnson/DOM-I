@@ -37,6 +37,16 @@ const siteContent = {
   },
 };
 
+const backupContent = {
+  "main-content": {
+    "features-h4": "Backup Feature",
+    "about-h4": "Backup About",
+    "services-h4": "Backup Services",
+    "product-h4": "Backup Products",
+    "vision-h4": "Backuo Vision"
+  }
+}
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
@@ -79,7 +89,7 @@ navHeader.prepend(articles);
 
 // change the color of the navigation text to green
 const navArray = Array.from(navigation);
-console.log(navArray);
+
 navArray.forEach((item) => {
   item.style.color = 'green';
 });
@@ -100,6 +110,15 @@ topContent[0].children[1].textContent = siteContent["main-content"]["features-co
 topContent[1].children[0].textContent = siteContent["main-content"]["about-h4"];
 topContent[1].children[1].textContent = siteContent["main-content"]["about-content"];
 
+
+// Add event listeners to trigger when there is a hover over certain h4 elements
+
+topContent[0].children[0].addEventListener('mouseover', function(propertyName) {
+  topContent[0].children[0].textContent = backupContent["main-content"]["features-h4"];
+});
+topContent[1].children[0].addEventListener('mouseover', function(propertyName) {
+  topContent[1].children[0].textContent = backupContent["main-content"]["about-h4"];
+});
 
 // set the content of the middle image section
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
