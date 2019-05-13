@@ -75,3 +75,13 @@ topContent[1].children[1].textContent = siteContent["main-content"]["about-conte
 
 // set the content of the middle image section
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// set the content of the botttom sections children
+bottomContent[0].children[0].textContent = siteContent["main-content"]["services-h4"];
+bottomContent[0].children[1].textContent = siteContent["main-content"]["services-content"];
+
+bottomContent[1].children[0].textContent = siteContent["main-content"]["product-h4"];
+bottomContent[1].children[1].textContent = siteContent["main-content"]["product-content"];
+
+bottomContent[2].children[0].textContent = siteContent["main-content"]["vision-h4"];
+bottomContent[2].children[1].textContent = siteContent["main-content"]["vision-content"];
