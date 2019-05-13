@@ -53,6 +53,12 @@ const bottomContent = document.querySelector('.bottom-content').children;
 const contact = document.querySelector('.contact').children;
 const footer = document.querySelector('footer').children;
 
+getStartedButton.style.background = 'teal'; 
+getStartedButton.style.border = '2px dashed blue';
+//when i do thus, the style is appended to the html element directly on the html page
+//  and not on the css file like i would have naturally wanted to do
+
+
 // set the content of the navigation menu children
 navigation[0].textContent = siteContent.nav["nav-item-1"];
 navigation[1].textContent = siteContent.nav["nav-item-2"];
