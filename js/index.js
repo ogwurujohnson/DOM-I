@@ -47,6 +47,10 @@ const snippetImage = document.querySelector('#cta-img');
 const middleImage = document.querySelector('#middle-img');
 const headerText = document.querySelector('h1');
 const getStartedButton = document.querySelector('button');
+const topContent = document.querySelector('.top-content').children;
+const bottomContent = document.querySelector('.bottom-content').children;
+const contact = document.querySelector('.contact').children;
+const footer = document.querySelector('footer').children;
 
 snippetImage.setAttribute('src', '../img/header-img.png');
 middleImage.setAttribute('src', '../img/mid-page-accent.jpg');
