@@ -72,3 +72,6 @@ topContent[0].children[1].textContent = siteContent["main-content"]["features-co
 
 topContent[1].children[0].textContent = siteContent["main-content"]["about-h4"];
 topContent[1].children[1].textContent = siteContent["main-content"]["about-content"];
+
+// set the content of the middle image section
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
